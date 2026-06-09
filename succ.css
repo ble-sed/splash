@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+Body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 100px;  
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 57px;
+}
+
+.main1 {
+    display: flex;
+    gap: 35px;
+    font-size: 21px;
+}
+
+.main1 a {
+    padding-bottom: 4px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 428px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(15px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.bar {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 25px 8px 0;
+}
+
+.bar img {
+    width: 28px;
+    height: 28px;
+}
+
+.main2 {
+    display: flex;
+    margin-bottom: 16px;
+    gap: 78px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 74%;
+    height: 732px;
+    border: 5px solid;
+    box-shadow: 0px 4px 100px 0px #0000001A;
+    gap: 30px;
+}
+
+.cont .succ {
+    font-size: 48px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.cont .conf {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.cont button {
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #000000;
+    width: 180px;
+    height: 64px;
+    border: none;
+    margin-top: 70px;
+}
+
+@media(max-width: 428px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px 40px;
+        gap: 0;
+    }
+
+    .firstimg {
+        max-width: 83%;
+        height: auto;
+    }
+
+    .main1,
+    .main2 {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+        max-width: 29px;
+        height: 29px;
+    }
+
+    .container {
+        margin: 30px 0 0 0;
+    }
+
+    .cont {
+        width: 80%;
+        height: 320px;
+        gap: 30px;
+        box-shadow: 0px 4px 40px 0px #0000001A;
+    }
+
+    .cont .succ {
+        font-size: 23px;
+    }
+
+    .cont img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .cont .conf {
+        font-size: 15px;
+    }
+
+    .cont button {
+        width: 70px;
+        height: 35px;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+}

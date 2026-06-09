@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="buy.css">
+    <script src="index.js"></script>
+</head>
+<body>
+     <header>
+        <nav>
+            <img src="image/Frame 114.png" alt="" class="firstimg">
+
+            <div class="main1">
+                <a href="home.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="blog.html">Blog</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="sidebar">
+                <div class="bar">
+                    <img src="image/close_26dp_000_FILL0_wght400_GRAD0_opsz24.svg" alt="" onclick="closeSidebar()">
+                    <a href="home.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </nav>
+            
+        <div class="main2">
+            <img src="image/Vector (6).png" alt="">
+            <img src="image/Vector (7).png" alt="">
+        </div>
+
+        <div class="hamburger">
+            <img src="image/menu_29dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="menu icon" onclick="showSidebar()">
+        </div>
+    </header>
+    
+    <section class="container1">
+        <div class="container2">
+            <div class="bigimg">
+                <img src="image/image 29.png" alt="" class="secimg">
+            </div>
+
+            <div class="container3">
+                <img src="image/image 24.png" alt="" class="thirdimg">
+                <img src="image/image 25.png" alt="" class="thirdimg">
+                <img src="image/image 26.png" alt="" class="thirdimg">
+            </div>
+        </div>
+
+        <div class="container4">
+            <p class="cont1">Lina Tee short Dress</p>
+
+            <p class="cont2">A line dress with dropped shoulder line. 
+            <br>V_shaped neckline emphasizes the 
+            <br>beauty of the necks.</p>
+
+            <img src="image/Frame 179.png" alt="">
+
+            <p class="cont3">$7,000</p>
+
+            <p class="cont4">Quantity</p>
+
+            <div class="quantity-selector">
+                <button class="btn" onclick="
+                    numberOfItems -= 1;
+                    if (numberOfItems < 1){
+                        numberOfItems = 0;
+                        alert('number of items is empty')
+                    }
+                    document.getElementById('num').innerText = numberOfItems"
+                >-</button>
+
+                <p id="num">0</p>
+
+                <button class="btn" onclick="
+                    numberOfItems += 1;
+                    if (numberOfItems > 10){
+                    numberOfItems = 1;
+                    alert ('number of items is sold out!');
+                    }
+                    document.getElementById('num').innerText = numberOfItems"
+                >+</button>
+            </div>
+
+            <div class="container5">
+                <label>Colours:</label>
+
+                <div class="color">
+                    <button class="color-btn" data-color="Brown">Brown</button>
+                    <button class="color-btn" data-color="Blue">Blue</button>
+                    <button class="color-btn" data-color="Black">Black</button>
+                </div>
+            </div>
+
+            <div class="container6">
+                <label>Size:</label>
+
+                <div class="size" id="size-options">
+                    <button class="size-btn">XS</button>
+                    <button class="size-btn">S</button>
+                    <button class="size-btn">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                </div>
+            </div>
+
+            <a href="info.html"><button class="pay">Pay</button></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerhead">
+            <div class="foot1">
+                <div class="ab">
+                    <p>About</p>
+                </div>
+                    <div class="foot11">
+                        <p>About Us</p>
+                        <p>Career</p>
+                        <p>Contact Us</p>
+                        <p>Track Your Orders</p>
+                        <p>Customer Service</p>
+                        <p>Returns & Exchanges</p>
+                    </div>
+            </div>
+
+            <div class="foot1">
+                <div class="ab">
+                    <p>Privacy</p>
+                </div>
+                    <div class="foot11">
+                        <p>Privacy Policy</p>
+                        <p>Terms & Condition</p>
+                        <p>Delivery Information</p>
+                        <p>FAQ</p>
+                    </div>
+            </div>
+
+            <div class="foot1">
+                <div class="ab">
+                    <p>Shops</p>
+                </div>
+                    <div class="foot11">
+                        <p>Dressmeoutlet.com, Nigeria </p>
+                        <p>Lauras Elegance, Dubai</p>
+                        <p>The Brand, UK</p>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="every">
+            <div class="spa">
+                <img src="image/SPLASH.png" alt="">
+                    <div class="brand">
+                        <img src="image/Vector (3).png" alt="">
+                        <p>Splashthebrand.com</p>
+                    </div>
+            </div>
+
+            <div class="logo">
+                <img src="image/Vector.png" alt="">
+                <img src="image/Vector (1).png" alt="">
+                <img src="image/Group.png" alt="">
+                <img src="image/Vector (2).png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
