@@ -294,10 +294,6 @@ label {
 }
 
 @media(max-width: 428px) {
-    body {
-        overflow-x: hidden;
-    }
-    
     header {
         display: flex;
         justify-content: space-between;
