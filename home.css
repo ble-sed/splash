@@ -7,7 +7,6 @@
 
 Body {
     font-family: "poppins", sans-serif;
-    overflow-x: hidden;
 }
 
 header {
@@ -87,8 +86,8 @@ nav {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 35px;
-    padding-top: 190px;
+    gap: 65px;
+    padding: 280px 165px 0 0;
 }
 
 .main3 h1 {
@@ -224,16 +223,16 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    height: 595px;
+    height: 815px;
 }
 
 .cont5 {
     display: flex;
     align-items: start;
     flex-direction: column;
-    gap: 25px;
-    padding-top: 117px;
-    padding-left: 213px;
+    gap: 45px;
+    padding-top: 165px;
+    padding-left: 386px;
 }
 
 .cont5 h1 {
@@ -266,16 +265,16 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    height: 694px;
+    height: 815px;
 }
 
 .cont7 {
     display: flex;
     align-items: start;
     flex-direction: column;
-    gap: 25px;
-    padding-top: 127px;
-    padding-left: 808px;
+    gap: 45px;
+    padding-top: 200px;
+    padding-left: 1060px;
 }
 
 .cont7 h1 {
@@ -295,16 +294,16 @@ span {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    height: 654px;
+    height: 815px;
 }
 
 .cont9 {
     display: flex;
     align-items: start;
     flex-direction: column;
-    gap: 25px;
-    padding-top: 130px;
-    padding-left: 150px;
+    gap: 65px;
+    padding-top: 160px;
+    padding-left: 320px;
 }
 
 .cont9 h1 {
@@ -410,7 +409,7 @@ span {
     }
 
     .main3 {
-        padding-top: 33px;
+        padding: 33px 0 0 0;
         gap: 20px;
     }
 
