@@ -306,6 +306,10 @@ input::placeholder {
         padding-left: 13px;
     }
 
+    .fig p {
+        padding-left: 295px;
+    }
+
     .shipmet {
         font-size: 20px;
         padding-right: 199px;
